@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LOGIN</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            height: 100%;
+        }
+        
+        body
+        /*自适应*/
+        
+        {
+            height: 100%;
+            background-image: url('img.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+        
+        .login {
+            /*只有同时为html和body设置height: 100%时，这里才生效,并且随浏览器窗口变化始终保持和浏览器视窗等高*/
+            height: 100%;
+            position: relative;
+        }
+        
+        .box {
+            width: 550px;
+            height: 300px;
+            background: linear-gradient(to bottom, rgb(125, 195, 244), rgb(201, 240, 247));
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            border-radius: 15px;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 0 20px #9bf2fe;
+        }
+        
+        .table {
+            font: 900 40px '';
+            text-align: center;
+            letter-spacing: 5px;
+            color: #3d3d3d;
+            margin-top: 30px;
+        }
+        
+        .go {
+            text-align: center;
+        }
+        
+        .log-in {
+            background-color: rgb(187, 249, 252);
+            border: 0;
+            border-radius: 15px;
+            align-items: center;
+            margin-left: 70px;
+        }
+        
+        .log-in:hover {
+            background-color: #7baef1;
+        }
+        
+        .sign-in {
+            background-color: rgb(187, 249, 252);
+            border: 0;
+            border-radius: 15px;
+            margin-left: 18px;
+        }
+        
+        .sign-in:hover {
+            background-color: #7baef1;
+        }
+        
+        .name {
+            width: 400px;
+            margin-left: 70px;
+            margin-bottom: 20px;
+            outline: none;
+            padding: 10px;
+        }
+        
+        .pass {
+            width: 400px;
+            margin-left: 70px;
+            margin-bottom: 20px;
+            outline: none;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login">
+        <div class="box">
+            <p class="table">Login</p>
+            <br>
+            <input type="text" placeholder="账号:" class="name">
+            <br>
+            <input type="password" placeholder="密码:" class="pass">
+            <br>
+            <input type="submit" value="提交" class="log-in" style="width:200px;height:50px;" onclick="javascript:window.location.href='http://127.0.0.1:5500/%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2/Loading.html';">
+            <input type="submit" value="注册" class="sign-in" style="width:200px;height:50px;" onclick="javascript:window.location.href='http://127.0.0.1:5500/%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2/Loading.html';">
+        </div>
+    </div>
+    <script src="" async defer></script>
+</body>
+
+</html>
